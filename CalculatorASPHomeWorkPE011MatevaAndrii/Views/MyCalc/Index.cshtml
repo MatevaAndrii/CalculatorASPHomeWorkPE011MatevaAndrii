@@ -1,0 +1,40 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <div>
+        <h1>My Calculator</h1>
+    </div>
+    @*<div>
+        @{
+            double x = new double();
+        }
+        <input id="@x" placeholder="number1" />
+    </div>
+    <div>
+        @{ 
+            string sign = "0";
+        }
+        <input id="@sign" placeholder="operation"/>
+    </div>
+    <div>
+        @{
+            double y = new double();
+        }
+        <input id="@y" placeholder="number2" />
+    </div>
+    <div>
+        @Html.RouteLink("Result", new { controller = "MyCalc", action = "Result", x, sign, y });
+    </div>*@
+    @Html.ActionLink("Result", "Result");
+</body>
+</html>

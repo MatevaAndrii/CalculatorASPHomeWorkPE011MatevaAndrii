@@ -1,0 +1,22 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Calc</title>
+</head>
+<body>
+    <div>
+        <h1>Result of calculation:</h1>
+        <div>@ViewBag.Res</div>
+    </div>
+    <div>
+        @Html.ActionLink("Index", "Index", "MyCalc");
+    </div>
+</body>
+</html>
